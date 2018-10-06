@@ -1,0 +1,62 @@
+
+.header
+    position: fixed !important
+    display: flex
+    flex-flow: column !important
+    background: white
+    transition: top 0.3s ease-in-out
+    width: 800px
+    height: 130px
+    align-items: left !important
+    border-right: solid
+    border-bottom: solid
+    border-color: black
+    z-index: 1
+
+    img
+      width: 300px
+
+    ul
+      list-style-type: none
+      display: flex
+      li
+        padding: 0px 5px
+    
+    nav
+      align-items: left !important
+
+    div
+      width: 100%
+      justify-content: space-between
+      display: flex
+
+    .navigation
+      align-items: left
+      width: 100%
+      justify-content: space-between
+
+      span
+        position: relative
+
+        a
+          color: black 
+          font-size: 20px
+          
+          div
+            display: none
+
+        &:hover
+
+          div
+            display: block
+            position: absolute
+            background-size: 150px
+            background-repeat: no-repeat
+            background-position-x: center
+            width: 150%
+            top: -15%
+            left: -20%
+            z-index: -1
+            overflow: visible
+            height: 100px
+
